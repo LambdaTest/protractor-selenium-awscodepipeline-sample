@@ -1,0 +1,24 @@
+version: 0.2
+env:
+  variables:
+    LT_USERNAME: "{your_lambda_username}"
+    LT_ACCESS_KEY: "{your_lambda_access_key}"
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+      - npm install -g protractor
+  build:
+    commands:
+      - echo Build started on `date`
+      - cd conf
+      - protractor single.conf.js
+artifacts:
+  files:
+      - '**/*'
+  base-directory: 'dist*'
+discard-paths: yes
