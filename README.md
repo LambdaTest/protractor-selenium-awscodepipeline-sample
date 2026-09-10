@@ -13,7 +13,7 @@
 With TestMu AI (Formerly LambdaTest), you can run Protractor Selenium tests integrated with AWS CodePipeline across real browsers and operating systems. This sample shows how to configure Protractor tests with AWS CodePipeline to run on the TestMu AI cloud.
 
 - [Sign up on TestMu AI](https://www.testmuai.com/register/) (Formerly LambdaTest).
-- Follow the [TestMu AI Documentation](https://www.testmuai.com/support/docs/) for the full setup walkthrough.
+- Follow the [TestMu AI Documentation](https://www.testmuai.com/support/docs/aws-codepipeline-integration-with-testmu/) for the full setup walkthrough.
 
 ### Prerequisites
 
